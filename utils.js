@@ -12,7 +12,7 @@ export class Pelicula {
     }
 
     render() {
-
+        addEventListener ('click', funcion())
     }
 
 }
