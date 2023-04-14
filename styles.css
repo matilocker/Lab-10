@@ -1,0 +1,331 @@
+/* Encabezado */
+
+:root {
+    --azul: rgb(59, 69, 183);
+    --fondo: #141414;
+    --blanco: azure;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2em;
+    z-index: 0;
+}
+
+.contenedor {
+width: 90%;
+margin: auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logotipo{
+    font-family: 'Righteous', cursive;
+    font-weight: normal;
+    color: var(--azul);
+    font-size: 40px;
+}
+
+.prime{
+    font-family: 'Righteous', cursive;
+    font-weight: normal;
+    color:var(--blanco);
+    font-size: 40px;
+}
+
+.logo {
+    display: flex;
+    justify-self: flex-start;
+    justify-content: flex-start;
+}
+
+header nav a{
+    color: rgb(158, 158, 255);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo{
+    color: var(--blanco);
+}
+
+/* Película Principal */
+
+.main-movie{
+    background: linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.455)), url(https://www.themoviedb.org/t/p/original/zfLW1tXbWCIdCXQ8KUvBzULJm1d.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    min-height: 40.62em;
+    color: var(--blanco);
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-movie .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.main-movie .titulo img{
+    object-fit: contain;
+    width: 40%;
+    margin-bottom: 0.2em;
+
+}
+
+.main-movie .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.main-movie .boton{
+    background: rgba(0, 0, 0, 0.455);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: var(--blanco);
+    margin-right: 1.25em;
+    margin-top: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.main-movie .adult{
+    background: rgba(0, 0, 0, 0.455);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: var(--blanco);
+    margin-right: 1.25em;
+    margin-top: 1.25em;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.main-movie .boton i{
+    margin-right: 1.25em;
+}
+
+.main-movie .boton:hover{
+    background: var(--blanco);
+    color: black;
+}
+
+.five{
+    margin-bottom: 0.6em;
+}
+
+.rating {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .rating button {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+  
+  .checked {
+    color: orange;
+  }
+
+/* Contenedor título y controles */
+
+.contenedor-titulo-controles h3{
+    color: var(--blanco);
+    font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button{
+    background: var(--blanco);
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+/* Contenedor principal y Flechas*/
+
+ h3{
+margin-top: 1em;
+}
+.recomendadas .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.recomendadas .contenedor-principal .flecha-izquierda,
+.recomendadas .contenedor-principal .flecha-derecha{
+    position:absolute;
+    border:none;
+    background: rgba(133, 133, 133, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50%-25%);
+    line-height: 40px;
+    width: 50px;
+    color: var(--blanco);
+    cursor: pointer;
+    z-index: 5;
+    transition: .2s ease all;
+}
+
+.recomendadas .contenedor-principal .flecha-izquierda{
+    left:0;
+}
+
+.recomendadas .contenedor-principal .flecha-derecha{
+    right:0;
+}
+
+.recomendadas .contenedor-principal .flecha-izquierda:hover,
+.recomendadas .contenedor-principal .flecha-derecha:hover {
+    background: rgba(0 0 0 0.9);
+    cursor: pointer;
+}
+
+/* Carousel */
+
+.recomendadas .contenedor-carousel .carousel .pelicula img{
+    object-fit: contain;
+    width: 100%;
+    vertical-align: top;
+}
+
+.contenedor-titulo-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+    background: var(--azul);
+}
+
+.recomendadas .contenedor-carousel{
+    width: 100%;
+    padding: 20px 0;
+    overflow-x:scroll;
+    scroll-behavior: smooth;
+}
+
+.recomendadas .contenedor-carousel .carousel{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.recomendadas .contenedor-carousel .carousel .pelicula {
+    min-width: 20%;
+    border-radius: 20px;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pelicula img{
+    border-radius: 10px;
+    position: relative;
+    z-index: -1;
+}
+
+.recomendadas .contenedor-carousel .carousel .pelicula.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.rating button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    object-fit: contain;
+    width: 40%;
+    background: rgba(0, 0, 0, 0.455);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: var(--blanco);
+    margin-right: 1.25em;
+    margin-top: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 0.8em;
+    position: relative;
+    z-index: -1;
+    top: -0.5em;
+    right: -0.7em;
+}
+
+/* Media Queries*/
+
+@media screen and (max-width:900px) {
+    header .logotipo {
+        margin-bottom: 10 px;
+    }
+header .contenedor {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .main-movie{
+        font-size: 14px;
+    }
+
+    .main-movie{
+        max-width: 100%;
+    }
+
+    .recomendadas .contenedor-carousel {
+        overflow: visible;
+    }
+
+    .recomendadas .contenedor-carousel .carousel {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+    .recomendadas .indicadores,
+    .recomendadas .flecha-izquierda,
+    .recomendadas .flecha-derecha {
+        display: none;
+    }
+}
