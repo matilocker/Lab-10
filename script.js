@@ -18,11 +18,25 @@ class Pelicula {
         const a = document.createElement('a')
         const img = document.createElement('img')
         const boton = document.createElement('button')
-        card.classList.add ("pelicula")
+        const añadir = document.createElement('button')
+        const rating = document.createElement('div')
+        boton.innerHTML = `
+        <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+        class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+        class="fa-regular fa-star"></i>
+        `;
+        añadir.innerHTML = `
+        <i class="fa-regular fa-bookmark"></i> Añadir
+        `;
+        card.classList.add ("pelicula");
+        rating.classList.add ("rating");
         img.src = this.tarjeta;
         a.href = "#";
         card.appendChild(a);
         a.appendChild(img);
+        rating.appendChild(boton);
+        rating.appendChild(añadir);
+        card.appendChild(rating);
 
 
         return card;
