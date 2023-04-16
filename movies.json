@@ -21,18 +21,10 @@
         "banner_title": "https://www.themoviedb.org/t/p/original/17TS3YFxsAFbhyt3pp2TmAa6LR0.png",
         "synopsis": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
         "banner": "https://www.themoviedb.org/t/p/original/cvf8IRQBm6x0bMVrfX2sMO9BMMm.jpg",
-        "card": "https://www.themoviedb.org/t/p/original/oOSKE6NUqSoD9PnMzdCigJDu53R.jpg"
-    },
-    {
-        "id": 4,
-        "title": "One Piece",
-        "banner_title": "https://www.themoviedb.org/t/p/original/9F7daAmibx8ZHTE17CdM5FAwiHE.png",
-        "synopsis": "Years ago, the fearsome Pirate King, Gol D. Roger was executed leaving a huge pile of treasure and the famous One Piece behind. Whoever claims the One Piece will be named the new King of the Pirates. Menkey D. Luffy, a boy who consumed a Devil Fruit, Decides to follow in the footsteps of his idol, the pirate Shanks, and find the One Piece. It helps, of course, that his body has the properties of rubber and that he's surrounded by a bevi of skilled fighters and thieves to help him along the way.",
-        "banner": "https://www.themoviedb.org/t/p/original/hS0IN656SbRe23TyH0PdaGytIuL.jpg",
         "card": "https://www.themoviedb.org/t/p/original/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg"
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "John Wick",
         "banner_title": "https://www.themoviedb.org/t/p/original/2XVpZM2dsuYBOcYFYh3UdtgVsGl.png",
         "synopsis": "Ex-hitman John Wick comes out of retirement to track down the gangsters that took everything from him.",
@@ -40,7 +32,7 @@
         "card": "https://www.themoviedb.org/t/p/original/h3VxEVUOoBZmo79O8RqKvyGiqmE.jpg"
     },
     {
-        "id": 6,
+        "id": 5,
         "title": "Puss in Boots",
         "banner_title": "https://www.themoviedb.org/t/p/original/hwG1X8WMarJn2Rxe4HZr1sMLQEb.png",
         "synopsis": "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.",
@@ -48,7 +40,7 @@
         "card": "https://www.themoviedb.org/t/p/original/jGOSeZ5wzh1PSfjTgYkWGGM4DZp.jpg"
     },
     {
-        "id": 7,
+        "id": 6,
         "title": "Modern Family",
         "banner_title": "https://www.themoviedb.org/t/p/original/rbKhglYrECjMZNYtT2QyihOQ5F.png",
         "synopsis": "The Pritchett-Dunphy-Tucker clan is a wonderfully large and blended family. They give us an honest and often hilarious look into the sometimes warm, sometimes twisted, embrace of the modern family.",
@@ -56,7 +48,7 @@
         "card": "https://www.themoviedb.org/t/p/original/klL4yhwiU8aF4AuF5dCfJA9sRnS.jpg"
     },
     {
-        "id": 8,
+        "id": 7,
         "title": "The Last Of Us",
         "banner_title": "https://www.themoviedb.org/t/p/original/msYtgZbEo8tAOJ37T50kgqulpKf.png",
         "synopsis": "Twenty years after modern civilization has been destroyed, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey, as they both must traverse the United States and depend on each other for survival.",
@@ -64,7 +56,7 @@
         "card": "https://www.themoviedb.org/t/p/original/hPB3F9CRdCf8wrncRPEEUm005DG.jpg"
     },
     {
-        "id": 9,
+        "id": 8,
         "title": "Sex Education",
         "banner_title": "https://www.themoviedb.org/t/p/original/giHehxoTuynaEzlsLiDFdNns9Jz.png",
         "synopsis": "Inexperienced Otis channels his sex therapist mom when he teams up with rebellious Maeve to set up an underground sex therapy clinic at school.",
@@ -72,15 +64,7 @@
         "card": "https://www.themoviedb.org/t/p/original/4Bph0hhnDH6dpc0SZIV522bLm4P.jpg"
     },
     {
-        "id": 10,
-        "title": "The Whale",
-        "banner_title": "https://www.themoviedb.org/t/p/original/vmLTdHYfXO3DzD47ATmS3mRoeNh.png",
-        "synopsis": "A reclusive English teacher suffering from severe obesity attempts to reconnect with his estranged teenage daughter for one last chance at redemption.",
-        "banner": "https://www.themoviedb.org/t/p/original/yk5quAAVHvA9Q4VJ26KrMXWRIaq.jpg",
-        "card": "https://www.themoviedb.org/t/p/original/jQ0gylJMxWSL490sy0RrPj1Lj7e.jpg"
-    },
-    {
-        "id": 11,
+        "id": 9,
         "title": "Ant-man and The Wasp: Quantumania",
         "banner_title": "https://www.themoviedb.org/t/p/original/zX0Ygza3WIhr7mTyoFqyKhKCbXa.png",
         "synopsis": "Super-Hero partners Scott Lang and Hope van Dyne, along with with Hope's parents Janet van Dyne and Hank Pym, and Scott's daughter Cassie Lang, find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that will push them beyond the limits of what they thought possible.",
@@ -88,7 +72,7 @@
         "card": "https://www.themoviedb.org/t/p/original/jh9hBDP9y7Ll3bG0Yhl66HSgN6e.jpg"
     },
     {
-        "id": 12,
+        "id": 10,
         "title": "2 Broke Girls",
         "banner_title": "https://www.themoviedb.org/t/p/original/9mceGesAMTi7fBV6jHReeWsPyZU.png",
         "synopsis": "Comedy about the unlikely friendship that develops between two very different young women who meet waitressing at a diner in trendy Williamsburg, Brooklyn, and form a bond over one day owning their own successful cupcake business. Only one thing stands in their way – they’re broke.",
@@ -96,7 +80,7 @@
         "card": "https://www.themoviedb.org/t/p/original/6WTxvLgmQkfQPJ59wEahpNBDFzh.jpg"
     },
     {
-        "id": 13,
+        "id": 11,
         "title": "WandaVision",
         "banner_title": "https://www.themoviedb.org/t/p/original/dWOt5t4eQVfMbwpBvVJUdA4HKNm.png",
         "synopsis": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
@@ -104,7 +88,7 @@
         "card": "https://www.themoviedb.org/t/p/original/1BvbezZqur1zTMWd1pmtk8oV1wz.jpg"
     },
     {
-        "id": 14,
+        "id": 12,
         "title": "MoonKnight",
         "banner_title": "https://www.themoviedb.org/t/p/original/jtwblGIqBnPKILNGozLKwHYk5gi.png",
         "synopsis": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",

@@ -1,6 +1,7 @@
 //import {Pelicula} from "./utils.js"; 
 //No me funcionó
 const carrusel = document.querySelector(".carousel")
+const recom = document.querySelector(".recom")
 
 class Pelicula {
     titulo = ""
@@ -16,20 +17,13 @@ class Pelicula {
         const card = document.createElement('div')
         const a = document.createElement('a')
         const img = document.createElement('img')
+        const boton = document.createElement('button')
         card.classList.add ("pelicula")
         img.src = this.tarjeta;
         a.href = "#";
         card.appendChild(a);
         a.appendChild(img);
-        
-        card.innerHTML = `
-        <div class="rating">
-            <button><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
-                class="fa-regular fa-star"></i></button>
-            <button><i class="fa-regular fa-bookmark"></i> Añadir</button>
-        <div>
-        `;
+
 
         return card;
     }
