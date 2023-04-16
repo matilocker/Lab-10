@@ -76,7 +76,6 @@ header nav a.activo{
 /* Película Principal */
 
 .main-movie{
-    background: linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.455)), url(https://www.themoviedb.org/t/p/original/zfLW1tXbWCIdCXQ8KUvBzULJm1d.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -329,3 +328,4 @@ header .contenedor {
         display: none;
     }
 }
+
