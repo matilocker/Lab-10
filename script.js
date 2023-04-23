@@ -85,7 +85,7 @@ const mifuncion = async () => {
       mainMovie.appendChild(descripcion);
       mainMovie.appendChild(titulo_banner);
       titulo_banner.appendChild(img_title);
-      mainMovie.style.background = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0)), url(${peli.banner})';
+      mainMovie.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`; //usamos comillas invertidas para permitir concatenar diferentes tipos de código.
       mainMovie.style.backgroundSize = 'cover';
       return
     })
