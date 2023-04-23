@@ -75,6 +75,7 @@ header nav a.activo{
 
 /* Película Principal */
 
+
 .main-movie{
     background-size: cover;
     background-position: center center;
@@ -84,12 +85,16 @@ header nav a.activo{
     color: var(--blanco);
     margin-bottom: 3.12em;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding: 40px;
 }
 
 .main-movie .contenedor{
     margin: 0 auto;
     margin-bottom: 6.25em;
+
 }
 
 .main-movie .titulo img{
@@ -184,6 +189,12 @@ header nav a.activo{
 
  h3{
 margin-top: 1em;
+order: -2;
+display: flex;
+flex-direction: column;
+justify-content: baseline;
+width: 100%;
+margin-bottom: 20px;
 }
 .recomendadas .contenedor-principal {
     display: flex;
@@ -304,12 +315,10 @@ header .contenedor {
     text-align: center;
     }
 
-    .main-movie{
+   /* .main-movie{
         font-size: 14px;
-    }
-
-    .main-movie{
         max-width: 100%;
+        display: flex;
     }
 
     .recomendadas .contenedor-carousel {
@@ -326,6 +335,5 @@ header .contenedor {
     .recomendadas .flecha-izquierda,
     .recomendadas .flecha-derecha {
         display: none;
-    }
+    }*/
 }
-
