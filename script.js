@@ -49,17 +49,66 @@ class Pelicula {
   }
 }
 
+const peliRandom = (peliculas) => {
+  return peliculas[Math.floor(Math.random() * peliculas.length)];
+}
+
 const mifuncion = async () => {
   const response = await fetch(
     "https://raw.githubusercontent.com/matilocker/Lab-10/main/movies.json"
   );
   const data = await response.json();
   const carruseles = document.querySelectorAll(".carousel");
+  const favoritos = document.querySelectorAll(".carousel_favourites");
+  const mainMovie = document.querySelector('.main-movie');
+  
+  /*function seleccionarPeliculaAleatoria(peliculas) {
+    return peliculas[Math.floor(Math.random() * peliculas.length)];
+  }
+
+  const peliculaAleatoria = seleccionarPeliculaAleatoria(data.suggested)
+
+  const newMainMovie = new Pelicula(
+    1,
+    mainMovie.banner,
+    mainMovie.banner_title,
+    mainMovie.synopsis
+  );
+  newMainMovie.innerHTML = `
+    <div class="botones">
+      <button role="button" class="boton">
+        <i class="fa-solid fa-play"></i>Reproducir
+      </button>
+      <button role="button" class="boton">
+        <i class="fa-regular fa-bookmark"></i>Guardar
+      </button>
+      <button class="adult">+18</button>
+    </div>
+  `;
+  const descripcion = document.createElement("p");
+  const titulo_banner = document.createElement("h3");
+  const img_title = document.createElement("img");
+  descripcion.classList.add("descripcion");
+  titulo_banner.classList.add("titulo");
+  img_title.src = newMainMovie.banner_title;
+  descripcion.innerHTML = `
+    ${newMainMovie.synopsis}
+  `;
+  newMainMovie.appendChild(descripcion);
+  newMainMovie.appendChild(titulo_banner);
+  titulo_banner.appendChild(img_title);
+  newMainMovie.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${newMainMovie.banner})`;*/  
+
+  /*const bannerRefresh = peliRandom(data.suggested);
+  const movieBanner = new Pelicula(
+    bannerRefresh.synopsis,
+    bannerRefresh.banner,
+    bannerRefresh.banner_title
+  );
+  mainMovie.appendChild(movieBanner.bannerRefresh());*/
 
   for (let movie of data.suggested) {
-    let peli = new Pelicula(movie.card, movie.banner, movie.id); //instanciar
-
-
+    let peli = new Pelicula(movie.card, movie.banner, movie.id, movie.banner_title, movie.synopsis);
     const pelis = peli.render();
 
     carruseles.forEach((carrusel) => {
@@ -67,15 +116,28 @@ const mifuncion = async () => {
     });
   }
 
+  for (let movie of data.favourites) {
+    let peli = new Pelicula(movie.card, movie.banner, movie.id, movie.banner_title, movie.synopsis);
+    const pelis = peli.render();
+
+    favoritos.forEach((favorito) => {
+      favorito.appendChild(pelis.cloneNode(true));
+    });
+  }
+
   for (let peli of data.suggested) {
-    let tarjeta = document.getElementById(peli.id, peli.banner, peli.synopsis, peli.banner_title)
+    let tarjeta = document.getElementById(peli.id);
     tarjeta.addEventListener('click', () => {
       const mainMovie = document.querySelector('.main-movie');
       mainMovie.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
-      mainMovie.innerHTML = ''; //Esto me permite que al volver a dar clock en otra de las películas se resetee el div y no se acumule la info.
+      mainMovie.innerHTML = `
+      <div class="botones"><button role="button" class="boton"><i class="fa-solid fa-play"></i>Reproducir</button>
+      <button role="button" class="boton"><i class="fa-regular fa-bookmark"></i>Guardar</button>
+      <button class="adult">+18</button></div>
+      `;
       const descripcion = document.createElement("p");
       const titulo_banner = document.createElement("h3");
-      const img_title = document.createElement("img")
+      const img_title = document.createElement("img");
       descripcion.classList.add("descripcion");
       titulo_banner.classList.add("titulo");
       img_title.src = peli.banner_title;
@@ -85,14 +147,41 @@ const mifuncion = async () => {
       mainMovie.appendChild(descripcion);
       mainMovie.appendChild(titulo_banner);
       titulo_banner.appendChild(img_title);
-      mainMovie.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`; //usamos comillas invertidas para permitir concatenar diferentes tipos de código.
+      mainMovie.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`;
       mainMovie.style.backgroundSize = 'cover';
       return
-    })
-  }
-  const mainMovie = document.querySelector('.main-movie');
+    });
+  };
+
+  for (let peli of data.favourites) {
+    let tarjeta = document.getElementById(peli.id);
+    tarjeta.addEventListener('click', () => {
+      const mainMovie = document.querySelector('.main-movie');
+      mainMovie.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
+      mainMovie.innerHTML = `
+      <div class="botones"><button role="button" class="boton"><i class="fa-solid fa-play"></i>Reproducir</button>
+      <button role="button" class="boton"><i class="fa-regular fa-bookmark"></i>Guardar</button>
+      <button class="adult">+18</button></div>
+      `;
+      const descripcion = document.createElement("p");
+      const titulo_banner = document.createElement("h3");
+      const img_title = document.createElement("img");
+      descripcion.classList.add("descripcion");
+      titulo_banner.classList.add("titulo");
+      img_title.src = peli.banner_title;
+      descripcion.innerHTML = `
+        ${peli.synopsis}
+        `;
+      mainMovie.appendChild(descripcion);
+      mainMovie.appendChild(titulo_banner);
+      titulo_banner.appendChild(img_title);
+      mainMovie.style.background = `linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0.855)), url(${peli.banner})`;
+      mainMovie.style.backgroundSize = 'cover';
+      return
+    });
+  };
+
   mainMovie.style.backgroundColor = 'linear-gradient(rgba(0, 0, 255, 0.166), rgba(0, 0, 0, 0))';
 };
-
 
 mifuncion();
